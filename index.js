@@ -34,7 +34,8 @@ app.put("/users/1", (req, res) => {
 });
 
 app.delete("/users/1", (req, res) => {
-  res.send("Deleted");
+  users[0]._id = null;
+  res.send("DELETED");
 });
 
 app.post("/users", (req, res) => {
